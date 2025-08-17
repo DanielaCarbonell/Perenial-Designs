@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Perenial Designs</title>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet" />
+
+<!-- EmailJS SDK -->
+<script defer src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- Hoja de estilos global -->
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+<header>
+  <div class="logo">Perenial Designs</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#form">Contact</a>
+  </nav>
+</header>
+
+<main class="main-section">
+  <h1>From Cottages to Castles.</h1>
+  <p>We create beautiful, elegant designs that transform spaces and bring your dreams to life.</p>
+  <a href="#video"><button>Learn More</button></a>
+</main>
+
+<!-- Who We Are -->
+<section id="about" class="about-section">
+  <div class="about-grid">
+    <div class="about-text">
+      <h2>Who <span>We Are</span></h2>
+      <div class="underline"></div>
+      <p>
+        After graduating from the University of Cranfield in the UK in 1996, with a degree in environmental managmment, Jen was hired as a gardener at Swiss Gardens, one of the major historic gardens in Bedfordshire, England. Here, she learned how to deadhead rhododendrons, a skill and necessity that has never left her. She went on to designing other people's gardens, as well as her own, in the UK, where gardening is a national pastime and where she learned her skills. On moving back to the US, she began to design gardens in Maine, small and large, and has been working for the last 25 years on every type of garden, from cottages to castles. Paul, who never used to grow anything that couldn't be eaten, joined her in designing and implementing gardens when the pandemic hit and his journalism jobs dried up. They have been working together for the last six years, and now even he knows the difference between a rhododendron and an azalea.
+      </p>
+      <a href="#form" class="btn-primary">Get in Touch</a>
+    </div>
+    <div class="about-img">
+      <img src="images/whoweare.jpeg" alt="Office environment">
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section">
+  <h2>Our Gallery</h2>
+  <div class="grid-classic">
+    <div class="img-container"><img src="images/perenial1.jpeg" alt="Perenial1"></div>
+    <div class="img-container"><img src="images/perenial2.jpeg" alt="Perenial2"></div>
+    <div class="img-container"><img src="images/perenial3.jpeg" alt="Perenial3"></div>
+    <div class="img-container"><img src="images/perenial4.jpeg" alt="Perenial4"></div>
+    <div class="img-container"><img src="images/perenial5.jpeg" alt="Perenial5"></div>
+    <div class="img-container"><img src="images/perenial6.jpeg" alt="Perenial6"></div>
+    <div class="img-container"><img src="images/perenial7.jpeg" alt="Perenial7"></div>
+    <div class="img-container"><img src="images/perenial8.jpeg" alt="Perenial8"></div>
+    <div class="img-container"><img src="images/perenial9.jpeg" alt="Perenial9"></div>
+    <div class="img-container"><img src="images/perenial10.jpeg" alt="Perenial10"></div>
+    <div class="img-container"><img src="images/perenial11.jpeg" alt="Perenial11"></div>
+    <div class="img-container"><img src="images/perenial12.jpeg" alt="Perenial12"></div>
+    <div class="img-container"><img src="images/perenial13.jpeg" alt="Perenial13"></div>
+    <div class="img-container"><img src="images/perenial14.jpeg" alt="Perenial14"></div>
+    <div class="img-container"><img src="images/perenial15.jpeg" alt="Perenial15"></div>
+    <div class="img-container"><img src="images/perenial16.jpeg" alt="Perenial16"></div>
+    <div class="img-container"><img src="images/perenial17.jpeg" alt="Perenial17"></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <button id="prev" class="lightbox-btn">&#10094;</button>
+  <img src="" alt="Zoomed Image">
+  <button id="next" class="lightbox-btn">&#10095;</button>
+</div>
+
+<!-- Video Section -->
+<section id="video" class="video-section">
+  <h2>Watch Our Work</h2>
+  <div class="video-wrapper">
+    <iframe 
+      src="https://www.youtube.com/embed/oPLbYNtrDic" 
+      title="YouTube video" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<form id="form" class="contact-form">
+  <h2>Contact Us</h2>
+  <div class="field">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+  </div>
+  <div class="field">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+  </div>
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="5"></textarea>
+  </div>
+  <input type="submit" id="button" value="Send Email">
+</form>
+
+<!-- Social Media -->
+<section class="social-media">
+  <p>Our Social Media</p>
+  <div class="social-icons">
+    <a href="https://wa.me/12072304267" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/PerennialDesigns/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="tel:+1 2072304267" aria-label="Call Us"><i class="fas fa-phone"></i></a>
+  </div>
+</section>
+
+<footer>&copy; 2025 Perenial Designs. All rights reserved.</footer>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="script.js" defer></script>
+
+</body>
+</html>
